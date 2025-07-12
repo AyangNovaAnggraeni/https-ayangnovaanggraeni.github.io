@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Ayang Nova's Art Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="lightbox2/css/lightbox.min.css" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -15,20 +17,35 @@
   </header>
 
   <section class="gallery" id="digital">
-    <h2>💻 Digital Art</h2>
-    <img src="images/digital/1.jpg" alt="Digital Artwork">
-  </section>
+  <h2>💻 Digital Art</h2>
+  <div class="grid">
+    <a href="images/digital/1.jpg" data-lightbox="digital" data-title="Digital Piece #1">
+        <img src="images/digital/1.jpg" alt="Digital Artwork">
+    </a>
+  </div>
+</section>
 
-  <section class="gallery" id="traditional">
-    <h2>✏️ Traditional Sketches</h2>
-    <img src="images/traditional/1.jpg" alt="Sketch 1">
-    <img src="images/traditional/2.jpg" alt="Sketch 2">
-    <img src="images/traditional/3.jpg" alt="Sketch 3">
-    <img src="images/traditional/4.jpg" alt="Sketch 4">
-  </section>
+<section class="gallery" id="traditional">
+  <h2>✏️ Traditional Sketches</h2>
+  <div class="grid">
+    <a href="images/traditional/1.jpg" data-lightbox="traditional" data-title="Sketch 1">
+      <img src="images/traditional/1.jpg" alt="Sketch 1">
+    </a>
+    <a href="images/traditional/2.jpg" data-lightbox="traditional" data-title="Sketch 2">
+      <img src="images/traditional/2.jpg" alt="Sketch 2">
+    </a>
+    <a href="images/traditional/3.jpg" data-lightbox="traditional" data-title="Sketch 3">
+      <img src="images/traditional/3.jpg" alt="Sketch 3">
+    </a>
+    <a href="images/traditional/4.jpg" data-lightbox="traditional" data-title="Sketch 4">
+      <img src="images/traditional/4.jpg" alt="Sketch 4">
+    </a>
+  </div>
+</section>
 
   <footer>
     <p>© 2025 Ayang Nova Anggraeni</p>
   </footer>
+  <script src="lightbox2/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
