@@ -37,12 +37,14 @@
 
 digitalImages.forEach((img, i) => {
   digitalContainer.innerHTML += `
+    <div class="art-card">
     <figure>
       <a href="images/digital/${img.file}" data-lightbox="digital" data-title="${img.caption}">
         <img src="images/digital/${img.file}" alt="${img.caption}">
       </a>
       <figcaption>${img.caption}</figcaption>
     </figure>
+    </div>
   `;
 });
 </script>
@@ -80,12 +82,14 @@ digitalImages.forEach((img, i) => {
 
   traditionalImages.forEach((img, i) => {
     traditionalContainer.innerHTML += `
+     <div class="art-card">
       <figure>
         <a href="images/traditional/${img.file}" data-lightbox="traditional" data-title="${img.caption}">
           <img src="images/traditional/${img.file}" alt="${img.caption}">
         </a>
         <figcaption>${img.caption}</figcaption>
       </figure>
+      </div>
     `;
   });
 
