@@ -18,68 +18,80 @@
 
   <section class="gallery" id="digital">
   <h2>💻 Digital Art</h2>
-  <div class="grid">
-    <a href="images/digital/1.jpg" data-lightbox="digital" data-title="Digital Piece #1">
-        <img src="images/digital/1.jpg" alt="Digital Artwork">
-    </a>
-    <a href="images/digital/2.jpg" data-lightbox="digital" data-title="Digital Piece #1">
-        <img src="images/digital/2.jpg" alt="Digital Artwork">
-    </a>
-    <a href="images/digital/3.jpg" data-lightbox="digital" data-title="Digital Piece #1">
-        <img src="images/digital/3.jpg" alt="Digital Artwork">
-    </a>
-    <a href="images/digital/4.jpg" data-lightbox="digital" data-title="Digital Piece #1">
-        <img src="images/digital/4.jpg" alt="Digital Artwork">
-    </a>
-    <a href="images/digital/5.jpg" data-lightbox="digital" data-title="Digital Piece #1">
-        <img src="images/digital/5.jpg" alt="Digital Artwork">
-    </a>
-    <a href="images/digital/6.jpg" data-lightbox="digital" data-title="Digital Piece #1">
-        <img src="images/digital/6.jpg" alt="Digital Artwork">
-    </a>
-  </div>
+  <div class="grid" id="digital-art"></div>
+
+<script>
+  const container = document.getElementById("digital-art");
+
+  const digitalImages = [
+  { file: '1.jpg', caption: 'yuyferhbvjkernvihetibwt viu5hyuh6yu56huh56 u' },
+  { file: '2.jpg', caption: 'Love & longing' },
+  { file: '3.jpg', caption: 'Eyes in the dark' },
+  { file: '4.jpg', caption: 'The world is a stage' },
+  { file: '5.jpg', caption: 'The world is a stage' },
+  { file: '6.jpg', caption: 'The world is a stage' },
+  { file: '7.jpg', caption: 'Pookie number 2' },                               
+];
+
+ const digitalContainer = document.getElementById("digital-art");
+
+digitalImages.forEach((img, i) => {
+  digitalContainer.innerHTML += `
+    <figure>
+      <a href="images/digital/${img.file}" data-lightbox="digital" data-title="${img.caption}">
+        <img src="images/digital/${img.file}" alt="${img.caption}">
+      </a>
+      <figcaption>${img.caption}</figcaption>
+    </figure>
+  `;
+});
+</script>
+
 </section>
 
 <section class="gallery" id="traditional">
   <h2>✏️ Traditional Sketches</h2>
-  <div class="grid">
-    <a href="images/traditional/1.jpg" data-lightbox="traditional" data-title="Sketch 1">
-      <img src="images/traditional/1.jpg" alt="Sketch 1">
-    </a>
-    <a href="images/traditional/2.jpg" data-lightbox="traditional" data-title="Sketch 2">
-      <img src="images/traditional/2.jpg" alt="Sketch 2">
-    </a>
-    <a href="images/traditional/3.jpg" data-lightbox="traditional" data-title="Sketch 3">
-      <img src="images/traditional/3.jpg" alt="Sketch 3">
-    </a>
-    <a href="images/traditional/5.jpg" data-lightbox="traditional" data-title="Sketch 4">
-      <img src="images/traditional/5.jpg" alt="Sketch 4">
-    </a>
-    <a href="images/traditional/6.jpg" data-lightbox="traditional" data-title="Sketch 4">
-      <img src="images/traditional/6.jpg" alt="Sketch 4">
-    </a>
-    <a href="images/traditional/7.jpg" data-lightbox="traditional" data-title="Sketch 4">
-      <img src="images/traditional/7.jpg" alt="Sketch 4">
-    </a>
-    <a href="images/traditional/8.jpg" data-lightbox="traditional" data-title="Sketch 4">
-      <img src="images/traditional/8.jpg" alt="Sketch 4">
-    </a>
-    <a href="images/traditional/9.jpg" data-lightbox="traditional" data-title="Sketch 4">
-      <img src="images/traditional/9.jpg" alt="Sketch 4">
-    </a>
-    <a href="images/traditional/10.jpg" data-lightbox="traditional" data-title="Sketch 4">
-      <img src="images/traditional/10.jpg" alt="Sketch 4">
-    </a>
-    <a href="images/traditional/11.jpg" data-lightbox="traditional" data-title="Sketch 4">
-      <img src="images/traditional/11.jpg" alt="Sketch 4">
-    </a>
-    <a href="images/traditional/12.jpg" data-lightbox="traditional" data-title="Sketch 4">
-      <img src="images/traditional/12.jpg" alt="Sketch 4">
-    </a>
-    <a href="images/traditional/13.jpg" data-lightbox="traditional" data-title="Sketch 4">
-      <img src="images/traditional/13.jpg" alt="Sketch 4">
-    </a>
-  </div>
+    <div class="grid" id="traditional-art"></div>
+    <script>
+    const traditionalContainer = document.getElementById("traditional-art");
+
+    const traditionalImages = [
+    { file: '1.jpg', caption: 'HOLOCENE sketch' },
+    { file: '2.jpg', caption: 'Love & longing' },
+    { file: '3.jpg', caption: 'Eyes in the dark' },
+    { file: '4.jpg', caption: 'The world is a stage' },
+    { file: '5.jpg', caption: 'The world is a stage' },
+    { file: '6.jpg', caption: 'The world is a stage' },
+    { file: '7.jpg', caption: 'The world is a stage' },
+    { file: '8.jpg', caption: 'The world is a stage' },
+    { file: '9.jpg', caption: 'The world is a stage' },
+    { file: '10.jpg', caption: 'The world is a stage' },
+    { file: '11.jpg', caption: 'The world is a stage' },
+    { file: '12.jpg', caption: 'The world is a stage' },
+    { file: '13.jpg', caption: 'The world is a stage' },
+    { file: '14.jpg', caption: 'The world is a stage' },
+    { file: '15.jpg', caption: 'The world is a stage' },
+    { file: '16.jpg', caption: 'The world is a stage' },
+    { file: '17.jpg', caption: 'The world is a stage' },
+    { file: '18.jpg', caption: 'The world is a stage' },
+    { file: '19.jpg', caption: 'The world is a stage' },
+    { file: '20.jpg', caption: 'The world is a stage' }   
+  ];
+
+  traditionalImages.forEach((img, i) => {
+    traditionalContainer.innerHTML += `
+      <figure>
+        <a href="images/traditional/${img.file}" data-lightbox="traditional" data-title="${img.caption}">
+          <img src="images/traditional/${img.file}" alt="${img.caption}">
+        </a>
+        <figcaption>${img.caption}</figcaption>
+      </figure>
+    `;
+  });
+
+
+</script>
+
 </section>
 
   <footer>
