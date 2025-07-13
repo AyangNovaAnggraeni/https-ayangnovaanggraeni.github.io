@@ -3,7 +3,7 @@
 Welcome to **Ayang Nova Anggraeni's Art Journey**!  
 This is a simple yet charming personal web-based gallery built to showcase my progress in both **digital art** and **traditional sketches**.
 
-> ✏️ This project was made for learning and personal portfolio purposes only.
+> ✏️ This project was made for learning and personal portfolio purposes only. And some of the images are still on progress, i'll update it if there's any
 
 ---
 
