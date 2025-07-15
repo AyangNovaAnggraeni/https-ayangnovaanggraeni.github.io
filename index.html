@@ -104,26 +104,27 @@ digitalImages.forEach((img, i) => {
   <script src="lightbox2/js/lightbox-plus-jquery.min.js"></script>
 
   <!-- disqus -->
-   <section class="comments">
+  <section class="comments">
   <h2>💬 Leave a Comment</h2>
   <div id="disqus_thread"></div>
 </section>
 
 <script>
   var disqus_config = function () {
-    this.page.url = window.location.href;  // current page URL
-    this.page.identifier = window.location.pathname; // unique identifier
+    this.page.url = "https://ayangnovaanggraeni.github.io/https-ayangnovaanggraeni.github.io/";
+    this.page.identifier = "ayang-art-gallery-home"; // You can customize this ID
   };
 
   (function() {
     var d = document, s = d.createElement('script');
-    s.src = 'https://ayang-art-gallery.disqus.com/admin/moderate/'; 
+    s.src = 'https://ayang-art-gallery.disqus.com/embed.js';  
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
   })();
 </script>
 
-<noscript>Please enable JavaScript to view the comments.</noscript>
+<noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+
 <!-- end disqus -->
 </body>
 </html>
