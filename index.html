@@ -102,5 +102,28 @@ digitalImages.forEach((img, i) => {
     <p>© 2025 Ayang Nova Anggraeni</p>
   </footer>
   <script src="lightbox2/js/lightbox-plus-jquery.min.js"></script>
+
+  <!-- disqus -->
+   <section class="comments">
+  <h2>💬 Leave a Comment</h2>
+  <div id="disqus_thread"></div>
+</section>
+
+<script>
+  var disqus_config = function () {
+    this.page.url = window.location.href;  // current page URL
+    this.page.identifier = window.location.pathname; // unique identifier
+  };
+
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://ayang-art-gallery.disqus.com/admin/moderate/'; 
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+
+<noscript>Please enable JavaScript to view the comments.</noscript>
+<!-- end disqus -->
 </body>
 </html>
